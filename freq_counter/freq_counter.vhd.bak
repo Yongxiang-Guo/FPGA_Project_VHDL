@@ -1,0 +1,4 @@
+entity freq_counter is
+port(	clk_50Mhz:in bit;
+		clk_in:in bit
+);

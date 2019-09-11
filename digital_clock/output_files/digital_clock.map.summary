@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Sep 01 17:36:16 2019
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : digital_clock
+Top-level Entity Name : digital_clock
+Family : Cyclone IV E
+Total logic elements : 170
+    Total combinational functions : 170
+    Dedicated logic registers : 101
+Total registers : 101
+Total pins : 15
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

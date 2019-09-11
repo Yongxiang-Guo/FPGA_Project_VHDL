@@ -1,0 +1,24 @@
+entity digital_clock is
+port(	clk_50mhz:in bit;
+		smg_sig:out bit_vector(7 downto 0);
+		smg_data:out bit_vector(7 downto 0)
+);
+end digital_clock;
+
+architecture tt of digital_clock is
+
+constant d0:bit_vector(7 downto 0):= "11111100";
+constant d1:bit_vector(7 downto 0):= "01100000";
+constant d2:bit_vector(7 downto 0):= "11011010";
+constant d3:bit_vector(7 downto 0):= "11110010";
+constant d4:bit_vector(7 downto 0):= "01100110";
+constant d5:bit_vector(7 downto 0):= "10110110";
+constant d6:bit_vector(7 downto 0):= "10111110";
+constant d7:bit_vector(7 downto 0):= "11100000";
+constant d8:bit_vector(7 downto 0):= "11111110";
+constant d9:bit_vector(7 downto 0):= "11110110";
+constant no:bit_vector(7 downto 0):= "00000000";
+
+
+end tt;
+

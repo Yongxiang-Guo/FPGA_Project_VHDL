@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Sep 02 15:41:10 2019
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : uart
+Top-level Entity Name : uart
+Family : Cyclone IV E
+Total logic elements : 102
+    Total combinational functions : 99
+    Dedicated logic registers : 43
+Total registers : 43
+Total pins : 3
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

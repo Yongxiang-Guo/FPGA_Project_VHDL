@@ -1,0 +1,40 @@
+entity uart is
+port(	clk_50Mhz:in bit;
+		tx:out bit;
+		rx:in	bit;
+		rx_data:out bit_vector(7 downto 0);
+		tx_data:in bit_vector(7 downto 0);
+		rx_sig:out bit;
+		tx_sig:in bit;
+);
+end uart;
+
+architecture tt of uart is
+--信号定义
+signal clk_uart:bit;
+signal tx_state:bit;		--串口发送线路状态
+signal rx_state:bit;		--串口接收线路状态
+signal rx_fall:bit;		--检测到串口接收下降沿
+
+begin
+
+--时钟分频：串口时钟，波特率为9600
+--16个时钟发1bit
+--50Mhz时钟326分频、
+process(clk_50Mhz)
+variable cnt:integer range 0 to 163;
+begin
+if(clk_50Mhz'event and clk_50Mhz = '1')then
+	cnt := cnt + 1;
+	if(cnt = 163)then
+		clk_uart <= not clk_uart;
+		cnt := 0;
+	end if;
+end if;
+end process;
+	
+--串口发送程序
+process()
+
+
+end tt;
